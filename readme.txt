@@ -1,6 +1,4 @@
-Certainly! Below is the README content formatted using GitHub's Markdown syntax, following the guidelines from the GitHub documentation you provided:
 
-```markdown
 # Virtual GitHub Clone
 
 A Python-based minimalistic Git-like repository system for local and cloud repository management. This system supports basic version control operations such as adding files, committing changes, pushing to a cloud repository, and branch management.
@@ -149,5 +147,3 @@ Feel free to extend this system for more features like merging, conflict resolut
 - **Bold Text**: Used `**text**` for emphasis on key features.
 - **Code Blocks**: Used triple backticks (```) for code snippets and commands.
 - **Lists**: Used `-` for bullet points and numbered lists for steps.
-
-You can copy and paste this content into your `README.md` file in your GitHub repository. This format will ensure clarity and readability for users who view your documentation.
