@@ -99,7 +99,6 @@ Example:
 python virtual_github_clone.py branch main --switch
 ```
 
----
 
 ## Directory Structure
 
@@ -118,8 +117,6 @@ project_directory/
 │       ├── branches.json
 ```
 
----
-
 ## Notes
 
 1. The `local` folder simulates your local repository.
@@ -128,5 +125,4 @@ project_directory/
 
 Feel free to extend this system for more features like merging, conflicts resolution, or detailed logs.
 
---- 
 
