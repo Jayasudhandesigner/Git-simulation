@@ -1,121 +1,81 @@
-# Virtual GitHub Clone
+<h1><b>Virtual GitHub Clone</b></h1>
 
-A **Python-based** minimalistic **Git-like repository system** for **local and cloud repository management**. This system supports basic version control operations such as **adding files, committing changes, pushing to a cloud repository, and branch management**.
+<p>A <b>Python-based</b> minimalistic <b>Git-like repository system</b> for <b>local and cloud repository management</b>. This system supports basic version control operations such as <b>adding files, committing changes, pushing to a cloud repository, and branch management</b>.</p>
 
-## Features
+<h2><b>Features</b></h2>
+<ul>
+<li><b>Initialize a new repository.</b></li>
+<li><b>Add files to the index.</b></li>
+<li><b>Commit changes to the local repository.</b></li>
+<li><b>Push changes from the local to the cloud repository.</b></li>
+<li><b>Branch creation and switching.</b></li>
+</ul>
 
-- **Initialize a new repository.**  
-- **Add files to the index.**  
-- **Commit changes to the local repository.**  
-- **Push changes from the local to the cloud repository.**  
-- **Branch creation and switching.**  
+<h2><b>Getting Started</b></h2>
 
-## Getting Started
+<h3><b>Prerequisites</b></h3>
+<ul>
+<li><b>Python 3.x installed on your system.</b></li>
+<li><b>Basic knowledge of Python and command-line tools.</b></li>
+</ul>
 
-### Prerequisites
+<h3><b>Installation</b></h3>
+<ol>
+<li>Clone this repository or download the script.</li>
+<li>Place the script in your working directory.</li>
+<li>Create folders named <code>local</code> and <code>cloud</code> in your project directory (or specify your folder names in the script).</li>
+</ol>
 
-- **Python 3.x installed on your system.**  
-- **Basic knowledge of Python and command-line tools.**  
+<hr>
 
-### Installation
+<h2><b>Usage</b></h2>
 
-1. Clone this repository or download the script.  
-2. Place the script in your working directory.  
-3. Create folders named `<local>` and `<cloud>` in your project directory (or specify your folder names in the script).  
+<h3>1. Initialize a Repository</h3>
+<p>Create a new repository in the specified folder.</p>
+<pre><code>python virtual_github_clone.py init &lt;repo_name&gt;</code></pre>
+<p><b>Example:</b></p>
+<pre><code>python virtual_github_clone.py init local</code></pre>
 
----
+<hr>
 
-## Usage
+<h3>2. Add Files to the Repository</h3>
+<p>Add a file to the staging area (index).</p>
+<pre><code>python virtual_github_clone.py add &lt;file_path&gt;</code></pre>
+<p><b>Example:</b></p>
+<pre><code>python virtual_github_clone.py add example.txt</code></pre>
 
-### 1. Initialize a Repository
+<hr>
 
-Create a new repository in the specified folder.
+<h3>3. Commit Changes</h3>
+<p>Commit all staged files with a message.</p>
+<pre><code>python virtual_github_clone.py commit -m "&lt;commit_message&gt;"</code></pre>
+<p><b>Example:</b></p>
+<pre><code>python virtual_github_clone.py commit -m "Initial commit"</code></pre>
 
-```bash
-python virtual_github_clone.py init <repo_name>
-```
+<hr>
 
-**Example:**
+<h3>4. Push to Cloud Repository</h3>
+<p>Push the local commits to the cloud repository.</p>
+<pre><code>python virtual_github_clone.py push</code></pre>
 
-```bash
-python virtual_github_clone.py init local
-```
+<hr>
 
----
+<h3>5. Branch Management</h3>
 
-### 2. Add Files to the Repository
+<h4>Create a New Branch</h4>
+<pre><code>python virtual_github_clone.py branch &lt;branch_name&gt; --create</code></pre>
+<p><b>Example:</b></p>
+<pre><code>python virtual_github_clone.py branch feature-xyz --create</code></pre>
 
-Add a file to the staging area (index).
+<h4>Switch to a Branch</h4>
+<pre><code>python virtual_github_clone.py branch &lt;branch_name&gt; --switch</code></pre>
+<p><b>Example:</b></p>
+<pre><code>python virtual_github_clone.py branch main --switch</code></pre>
 
-```bash
-python virtual_github_clone.py add <file_path>
-```
+<hr>
 
-**Example:**
-
-```bash
-python virtual_github_clone.py add example.txt
-```
-
----
-
-### 3. Commit Changes
-
-Commit all staged files with a message.
-
-```bash
-python virtual_github_clone.py commit -m "<commit_message>"
-```
-
-**Example:**
-
-```bash
-python virtual_github_clone.py commit -m "Initial commit"
-```
-
----
-
-### 4. Push to Cloud Repository
-
-Push the local commits to the cloud repository.
-
-```bash
-python virtual_github_clone.py push
-```
-
----
-
-### 5. Branch Management
-
-#### Create a New Branch
-
-```bash
-python virtual_github_clone.py branch <branch_name> --create
-```
-
-**Example:**
-
-```bash
-python virtual_github_clone.py branch feature-xyz --create
-```
-
-#### Switch to a Branch
-
-```bash
-python virtual_github_clone.py branch <branch_name> --switch
-```
-
-**Example:**
-
-```bash
-python virtual_github_clone.py branch main --switch
-```
-
----
-
-## Directory Structure
-
-```
+<h2><b>Directory Structure</b></h2>
+<pre><code>
 project_directory/
 ├── local/
 │   ├── .git/
@@ -128,14 +88,15 @@ project_directory/
 │       ├── objects/
 │       ├── refs/
 │       ├── branches.json
-```
+</code></pre>
 
----
+<hr>
 
-## Notes
+<h2><b>Notes</b></h2>
+<ul>
+<li>The <code>local</code> folder simulates your local repository.</li>
+<li>The <code>cloud</code> folder simulates your remote repository.</li>
+<li>Branching supports creating and switching between branches but does not include advanced merging.</li>
+</ul>
 
-1. The `<local>` folder simulates your local repository.  
-2. The `<cloud>` folder simulates your remote repository.  
-3. Branching supports creating and switching between branches but does not include advanced merging.  
-
-Feel free to extend this system for more features like **merging, conflict resolution, or detailed logs.** 🚀
+<p>Feel free to extend this system for more features like <b>merging, conflict resolution, or detailed logs.</b> 🚀</p>
