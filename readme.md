@@ -1,11 +1,5 @@
 <h1><b>Virtual GitHub Clone</b></h1>
 
-
-<h1><b>Java3D-Starfield</b></h1>
-<p>This Java program simulates a 3D starfield in a 3D environment to provide a visually appealing experience.</p>
-
-<h2><b>Installation</b></h2>
-
 <p>A <b>Python-based</b> minimalistic <b>Git-like repository system</b> for <b>local and cloud repository management</b>. This system supports basic version control operations such as <b>adding files, committing changes, pushing to a cloud repository, and branch management</b>.</p>
 
 <h2><b>Features</b></h2>
